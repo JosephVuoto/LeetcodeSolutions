@@ -55,7 +55,6 @@ public class Solution008 {
         int sign = 1, start = 0, len = str.length();
         long sum = 0;
         if (firstChar == '+') {
-            sign = 1;
             start++;
         } else if (firstChar == '-') {
             sign = -1;
