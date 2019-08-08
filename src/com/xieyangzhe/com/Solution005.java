@@ -53,7 +53,7 @@ public class Solution005 {
                 }
             }
         }
-        return  result;
+        return result;
     }
 
     //Approach 3
@@ -94,7 +94,7 @@ public class Solution005 {
         return ans;
     }
 
-    private String divide (String s, int left, int right) {
+    private String divide(String s, int left, int right) {
         int L = left, R = right;
         while (L >= 0 && R < s.length() && s.charAt(L) == s.charAt(R)) {
             R++;

@@ -9,25 +9,27 @@ package com.xieyangzhe.com;
 //Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class Solution017 {
-    String[][] refer={{},{},{"a","c","b"},{"d","e","f"},{"g","h","i"},{"j","k","l"},{"m","n","o"},{"p","q","r","s"},{"t","u","v"},{"w","x","y","z"}};
+    String[][] refer = {{}, {}, {"a", "c", "b"}, {"d", "e", "f"}, {"g", "h", "i"}, {"j", "k", "l"}, {"m", "n", "o"}, {"p", "q", "r", "s"}, {"t", "u", "v"}, {"w", "x", "y", "z"}};
 
     public List<String> letterCombinations(String digits) {
         List<String> list = new ArrayList<>();
-        if(!digits.equals("")) {
-            helper(list, digits,"");
+        if (!digits.equals("")) {
+            helper(list, digits, "");
         }
         return list;
     }
-    private void helper(List<String> list, String digits,String s){
-        if(digits.length()==0){ list.add(s); return;}
-        int idx=Integer.parseInt(digits.substring(0, 1));
-        for(String k:refer[idx]){
-            helper(list,digits.substring(1,digits.length()),s+k);
+
+    private void helper(List<String> list, String digits, String s) {
+        if (digits.length() == 0) {
+            list.add(s);
+            return;
+        }
+        int idx = Integer.parseInt(digits.substring(0, 1));
+        for (String k : refer[idx]) {
+            helper(list, digits.substring(1, digits.length()), s + k);
         }
     }
 }

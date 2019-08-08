@@ -33,7 +33,7 @@ public class Solution006 {
         }
         int cur = 0;
         int direction = 1; // 1 - down; -1 - up
-        for (char c: s.toCharArray()) {
+        for (char c : s.toCharArray()) {
             rows.get(cur).append(c);
             cur += direction;
             if (cur == 0 || cur == numRows - 1) {
@@ -41,7 +41,7 @@ public class Solution006 {
             }
         }
         StringBuilder res = new StringBuilder();
-        for (StringBuilder row: rows) {
+        for (StringBuilder row : rows) {
             res.append(row);
         }
         return res.toString();

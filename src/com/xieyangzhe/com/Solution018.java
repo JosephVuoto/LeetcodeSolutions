@@ -28,8 +28,8 @@ public class Solution018 {
             return result;
         }
         Arrays.sort(nums);
-        for (int i = 0; i < nums.length - 3; i ++) {
-            for (int j = i + 1; j < nums.length - 2; j ++) {
+        for (int i = 0; i < nums.length - 3; i++) {
+            for (int j = i + 1; j < nums.length - 2; j++) {
                 int head = j + 1;
                 int tail = nums.length - 1;
                 while (head < tail) {
@@ -43,12 +43,12 @@ public class Solution018 {
                         if (result.contains(item) == false) {
                             result.add(item);
                         }
-                        head ++;
-                        tail --;
+                        head++;
+                        tail--;
                     } else if (tempSum < target) {
-                        head ++;
+                        head++;
                     } else {
-                        tail --;
+                        tail--;
                     }
                 }
             }

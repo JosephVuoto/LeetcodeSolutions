@@ -1,6 +1,5 @@
 package com.xieyangzhe.com;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 //        Given an array of strings, group anagrams together.
@@ -21,7 +20,7 @@ import java.util.*;
 public class Solution049 {
     public List<List<String>> groupAnagrams(String[] strs) {
         Map<String, List<String>> res = new HashMap<>();
-        for (String s: strs) {
+        for (String s : strs) {
             char[] charArray = s.toCharArray();
             Arrays.sort(charArray);
             String k = new String(charArray);

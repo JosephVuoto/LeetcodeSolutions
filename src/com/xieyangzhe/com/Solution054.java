@@ -31,7 +31,7 @@ public class Solution054 {
             return res;
         }
         int r = matrix.length, c = matrix[0].length;
-        boolean [][] visited = new boolean[r][c];
+        boolean[][] visited = new boolean[r][c];
 
         int[] rd = {0, 1, 0, -1};
         int[] cd = {1, 0, -1, 0};
