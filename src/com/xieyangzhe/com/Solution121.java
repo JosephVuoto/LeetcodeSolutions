@@ -21,7 +21,7 @@ public class Solution121 {
     public int maxProfit(int[] prices) {
         int smallest = Integer.MAX_VALUE;
         int profit = 0;
-        for (int p: prices) {
+        for (int p : prices) {
             if (p < smallest) {
                 smallest = p;
             } else if (p - smallest > profit) {

@@ -14,7 +14,7 @@ package com.xieyangzhe.com;
 
 public class Solution059 {
     public int[][] generateMatrix(int n) {
-        int [][] ans = new int[n][n];
+        int[][] ans = new int[n][n];
         int r = 0, c = 0, di = 0;
         int[] dr = {0, 1, 0, -1};
         int[] dc = {1, 0, -1, 0};
@@ -26,7 +26,7 @@ public class Solution059 {
                     || tmpc >= n || ans[tmpr][tmpc] > 0) {
                 di = (di + 1) % 4;
                 r = r + dr[di];
-                c = c + + dc[di];
+                c = c + +dc[di];
             } else {
                 r = tmpr;
                 c = tmpc;

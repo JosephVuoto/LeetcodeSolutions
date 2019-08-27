@@ -18,7 +18,7 @@ package com.xieyangzhe.com;
 public class Solution136 {
     public int singleNumber(int[] nums) {
         int res = 0;
-        for (int i: nums) {
+        for (int i : nums) {
             res ^= i;
         }
         return res;
