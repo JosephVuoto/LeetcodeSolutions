@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="139b1818-3f12-49dc-9cf6-81e374c16afa" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/Solution062.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LeetCode/com/xieyangzhe/com/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/com/xieyangzhe/com/ListNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LeetCode/com/xieyangzhe/com/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/com/xieyangzhe/com/Main.class" afterDir="false" />
@@ -10,6 +11,9 @@
       <change beforePath="$PROJECT_DIR$/out/production/LeetCode/com/xieyangzhe/com/Solutuin022.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/com/xieyangzhe/com/Solutuin022.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LeetCode/com/xieyangzhe/com/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/com/xieyangzhe/com/TreeNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xieyangzhe/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xieyangzhe/com/Solution059.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/Solution059.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xieyangzhe/com/Solution121.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/Solution121.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xieyangzhe/com/Solution136.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/Solution136.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,6 +128,7 @@
       <workItem from="1565824037511" duration="431000" />
       <workItem from="1565928792838" duration="1719000" />
       <workItem from="1565952514668" duration="121000" />
+      <workItem from="1566876245636" duration="194000" />
     </task>
     <servers />
   </component>
