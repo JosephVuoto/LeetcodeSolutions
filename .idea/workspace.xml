@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="139b1818-3f12-49dc-9cf6-81e374c16afa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s200/Solution141.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s200/Solution155.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution064.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xieyangzhe/com/common/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/common/ListNode.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +118,9 @@
       <workItem from="1565824037511" duration="431000" />
       <workItem from="1565928792838" duration="1719000" />
       <workItem from="1565952514668" duration="121000" />
-      <workItem from="1566876245636" duration="1095000" />
+      <workItem from="1566876245636" duration="1243000" />
+      <workItem from="1566900971593" duration="12000" />
+      <workItem from="1566989385432" duration="575000" />
     </task>
     <servers />
   </component>
