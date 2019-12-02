@@ -1,4 +1,4 @@
-package com.xieyangzhe.com.s200;
+package com.xieyangzhe.com.s100;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,7 @@ import java.util.List;
 //        "()(())",
 //        "()()()"
 //        ]
-public class Solutuin022 {
+public class Solution022 {
     public List<String> generateParenthesis(int n) {
         List<String> ans = new ArrayList();
         if (n == 0) {
