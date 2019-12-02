@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="139b1818-3f12-49dc-9cf6-81e374c16afa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution055.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution060.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xieyangzhe/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/Main.java" afterDir="false" />
     </list>
@@ -38,23 +38,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Solution055.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Solution055.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution055.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="34" column="21" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="34" selection-end-column="21" />
+            <state relative-caret-position="342">
+              <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/xieyangzhe/com/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            <state relative-caret-position="152">
+              <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Solution060.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution060.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="46" selection-end-column="34" />
               <folding>
-                <element signature="e#93#94#0" expanded="true" />
-                <element signature="e#125#126#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,8 +85,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/xieyangzhe/com/common/TreeNode.java" />
         <option value="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution022.java" />
-        <option value="$PROJECT_DIR$/src/com/xieyangzhe/com/Main.java" />
         <option value="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution055.java" />
+        <option value="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution060.java" />
+        <option value="$PROJECT_DIR$/src/com/xieyangzhe/com/Main.java" />
       </list>
     </option>
   </component>
@@ -234,12 +243,12 @@
       <workItem from="1566900971593" duration="12000" />
       <workItem from="1566989385432" duration="1050000" />
       <workItem from="1567039690550" duration="782000" />
-      <workItem from="1575290195008" duration="1111000" />
+      <workItem from="1575290195008" duration="2567000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1111000" />
+    <option name="totallyTimeSpent" value="2567000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -255,7 +264,7 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.12117904" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.2816594" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2497332" />
@@ -391,21 +400,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xieyangzhe/com/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution055.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="342">
+          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution060.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="46" selection-end-column="34" />
           <folding>
-            <element signature="e#93#94#0" expanded="true" />
-            <element signature="e#125#126#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution055.java">
+    <entry file="file://$PROJECT_DIR$/src/com/xieyangzhe/com/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="21" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="34" selection-end-column="21" />
+        <state relative-caret-position="152">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
         </state>
       </provider>
     </entry>
