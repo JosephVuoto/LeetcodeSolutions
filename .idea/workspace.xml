@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="139b1818-3f12-49dc-9cf6-81e374c16afa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution080.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution081.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution082.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/com/xieyangzhe/com/s100/Solution079.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/com/xieyangzhe/com/s100/Solution079.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution060.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution060.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution071.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution071.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution078.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution078.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution079.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution079.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,20 +53,19 @@
       <recent name="com.xieyangzhe.com" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution080">
-    <configuration name="Solution071" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xieyangzhe.com.s100.Solution071" />
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xieyangzhe.com.s100.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Solution082">
     <configuration name="Solution077" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xieyangzhe.com.s100.Solution077" />
       <module name="LeetCode" />
@@ -124,34 +118,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Solution082" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xieyangzhe.com.s100.Solution082" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xieyangzhe.com.s100.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Solution071" />
       <item itemvalue="Application.Solution077" />
       <item itemvalue="Application.Solution078" />
       <item itemvalue="Application.Solution079" />
       <item itemvalue="Application.Solution080" />
+      <item itemvalue="Application.Solution082" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution082" />
         <item itemvalue="Application.Solution080" />
         <item itemvalue="Application.Solution079" />
         <item itemvalue="Application.Solution078" />
         <item itemvalue="Application.Solution077" />
-        <item itemvalue="Application.Solution071" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
