@@ -12,21 +12,23 @@ public class Solution155 {
         private int min = Integer.MAX_VALUE;
         private Stack<Integer> stack;
 
-        /** initialize your data structure here. */
+        /**
+         * initialize your data structure here.
+         */
         public MinStack() {
             stack = new Stack<Integer>();
         }
 
         public void push(int x) {
-            if(x <= min){
+            if (x <= min) {
                 stack.push(min);
-                min=x;
+                min = x;
             }
             stack.push(x);
         }
 
         public void pop() {
-            if(stack.pop() == min) {
+            if (stack.pop() == min) {
                 min = stack.pop();
             }
         }

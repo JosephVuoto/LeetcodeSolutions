@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="139b1818-3f12-49dc-9cf6-81e374c16afa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution086.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution080.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution081.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/com/xieyangzhe/com/s100/Solution079.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/com/xieyangzhe/com/s100/Solution079.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution060.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution060.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution071.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution071.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution078.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution078.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution079.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution079.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +42,11 @@
   </component>
   <component name="ProjectId" id="1P60yzCgg46gRMys3J8BTuDSbVT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -48,34 +58,100 @@
       <recent name="com.xieyangzhe.com" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.xieyangzhe.com.Main" />
+  <component name="RunManager" selected="Application.Solution080">
+    <configuration name="Solution071" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xieyangzhe.com.s100.Solution071" />
       <module name="LeetCode" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xieyangzhe.com.s100.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Solution077" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xieyangzhe.com.s100.Solution077" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xieyangzhe.com.s100.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution078" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xieyangzhe.com.s100.Solution078" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xieyangzhe.com.s100.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution079" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xieyangzhe.com.s100.Solution079" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xieyangzhe.com.s100.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution080" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xieyangzhe.com.s100.Solution080" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xieyangzhe.com.s100.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Solution071" />
+      <item itemvalue="Application.Solution077" />
+      <item itemvalue="Application.Solution078" />
+      <item itemvalue="Application.Solution079" />
+      <item itemvalue="Application.Solution080" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Solution080" />
+        <item itemvalue="Application.Solution079" />
+        <item itemvalue="Application.Solution078" />
+        <item itemvalue="Application.Solution077" />
+        <item itemvalue="Application.Solution071" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -122,6 +198,15 @@
       <workItem from="1566900971593" duration="12000" />
       <workItem from="1566989385432" duration="1050000" />
       <workItem from="1567039690550" duration="782000" />
+      <workItem from="1575290195008" duration="2832000" />
+      <workItem from="1575466804534" duration="841000" />
+      <workItem from="1575551493019" duration="1205000" />
+      <workItem from="1575792424580" duration="1032000" />
+      <workItem from="1575798120388" duration="2879000" />
+      <workItem from="1575855873249" duration="2439000" />
+      <workItem from="1575860742312" duration="624000" />
+      <workItem from="1575861892405" duration="2937000" />
+      <workItem from="1575881408396" duration="4433000" />
     </task>
     <servers />
   </component>
@@ -140,5 +225,47 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="811" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575855991052">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="811" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575855991052" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1575882503676">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575882503676" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1575882503676">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575882503676" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1575882503676">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575882503676" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1575882503676">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575882503676" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1575882503676">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575882503676" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1575882503676">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575882503676" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1575882503676">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575882503676" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1575882503676">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575882503676" />
+    <state x="334" y="136" key="new project wizard" timestamp="1575883233594">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="136" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1575883233594" />
   </component>
 </project>
