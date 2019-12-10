@@ -31,14 +31,14 @@ public class Solution060 {
     //Output: "2314"
 
     public String getPermutation(int n, int k) {
-        int[] factor = new int[] {1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880};
+        int[] factor = new int[]{1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880};
         List<Integer> numbers = new ArrayList<>();
         StringBuilder sb = new StringBuilder();
         for (int i = 1; i <= n; i++) {
             numbers.add(i);
         }
         k--;
-        for(int i = 1; i <= n; i++){
+        for (int i = 1; i <= n; i++) {
             int index = k / factor[n - i];
             sb.append(String.valueOf(numbers.get(index)));
             numbers.remove(index);

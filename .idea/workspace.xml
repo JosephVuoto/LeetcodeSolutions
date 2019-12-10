@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="139b1818-3f12-49dc-9cf6-81e374c16afa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution079.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution080.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution081.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/com/xieyangzhe/com/s100/Solution079.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/com/xieyangzhe/com/s100/Solution079.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution060.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution060.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution071.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution071.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution078.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution078.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution079.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s100/Solution079.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,17 +58,7 @@
       <recent name="com.xieyangzhe.com" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution079">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.xieyangzhe.com.Main" />
-      <module name="LeetCode" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Solution080">
     <configuration name="Solution071" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xieyangzhe.com.s100.Solution071" />
       <module name="LeetCode" />
@@ -115,20 +111,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Solution080" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xieyangzhe.com.s100.Solution080" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xieyangzhe.com.s100.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Solution071" />
       <item itemvalue="Application.Solution077" />
       <item itemvalue="Application.Solution078" />
       <item itemvalue="Application.Solution079" />
+      <item itemvalue="Application.Solution080" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution080" />
         <item itemvalue="Application.Solution079" />
         <item itemvalue="Application.Solution078" />
         <item itemvalue="Application.Solution077" />
         <item itemvalue="Application.Solution071" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +205,8 @@
       <workItem from="1575798120388" duration="2879000" />
       <workItem from="1575855873249" duration="2439000" />
       <workItem from="1575860742312" duration="624000" />
-      <workItem from="1575861892405" duration="1794000" />
+      <workItem from="1575861892405" duration="2937000" />
+      <workItem from="1575881408396" duration="4433000" />
     </task>
     <servers />
   </component>
@@ -221,37 +231,41 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="811" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575855991052" />
-    <state width="1877" height="164" key="GridCell.Tab.0.bottom" timestamp="1575863652321">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1575882503676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="164" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575863652321" />
-    <state width="1877" height="164" key="GridCell.Tab.0.center" timestamp="1575863652320">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575882503676" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1575882503676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="164" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575863652320" />
-    <state width="1877" height="164" key="GridCell.Tab.0.left" timestamp="1575863652320">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575882503676" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1575882503676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="164" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575863652320" />
-    <state width="1877" height="164" key="GridCell.Tab.0.right" timestamp="1575863652320">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575882503676" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1575882503676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="164" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575863652320" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1575863433663">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575882503676" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1575882503676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575863433663" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1575863433663">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575882503676" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1575882503676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575863433663" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1575863433663">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575882503676" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1575882503676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575863433663" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1575863433663">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575882503676" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1575882503676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575863433663" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575882503676" />
+    <state x="334" y="136" key="new project wizard" timestamp="1575883233594">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="136" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1575883233594" />
   </component>
 </project>

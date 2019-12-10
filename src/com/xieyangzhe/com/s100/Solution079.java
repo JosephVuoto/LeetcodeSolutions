@@ -19,7 +19,7 @@ public class Solution079 {
     //Given word = "SEE", return true.
     //Given word = "ABCB", return false.
 
-    boolean[][] visited;
+    private boolean[][] visited;
 
     public boolean exist(char[][] board, String word) {
 

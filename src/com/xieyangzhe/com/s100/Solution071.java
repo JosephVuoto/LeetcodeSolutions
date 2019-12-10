@@ -49,7 +49,7 @@ public class Solution071 {
     public String simplifyPath(String path) {
         Stack<String> stack = new Stack<>();
         String[] tokens = path.split("/");
-        for (String token: tokens) {
+        for (String token : tokens) {
             if (token.equals("..")) {
                 if (!stack.isEmpty()) {
                     stack.pop();
