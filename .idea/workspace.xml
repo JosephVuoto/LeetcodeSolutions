@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="139b1818-3f12-49dc-9cf6-81e374c16afa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s200/Solution120.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s200/Solution114.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -207,7 +207,7 @@
       <workItem from="1576112377881" duration="7159000" />
       <workItem from="1576135568383" duration="1563000" />
       <workItem from="1576139083188" duration="146000" />
-      <workItem from="1576205010616" duration="3296000" />
+      <workItem from="1576205010616" duration="4207000" />
     </task>
     <servers />
   </component>
@@ -268,16 +268,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="334" y="136" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1575883233594" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/xieyangzhe/com/s200/Solution120.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
