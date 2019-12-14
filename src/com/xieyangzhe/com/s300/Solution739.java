@@ -1,5 +1,7 @@
 package com.xieyangzhe.com.s300;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Stack;
 
 /**
@@ -24,5 +26,24 @@ public class Solution739 {
             stack.push(i);
         }
         return ret;
+    }
+
+    private int[] dailyTemperatures1(int[] T) {
+        int[] next = new int[101];
+        int[] ans = new int[T.length];
+        Arrays.fill(next, Integer.MAX_VALUE);
+        for (int i = T.length - 1; i >= 0; i--) {
+            int warmerNxt = Integer.MAX_VALUE;
+            for (int j = T[i] + 1; j < 101; j++) {
+                if (next[j] < warmerNxt) {
+                    warmerNxt = next[j];
+                }
+            }
+            if (warmerNxt < Integer.MAX_VALUE) {
+                ans[i] = warmerNxt - i;
+            }
+            next[T[i]] = i;
+        }
+        return ans;
     }
 }
