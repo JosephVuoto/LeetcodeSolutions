@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution078 {
+    public static void main(String[] args) {
+        System.out.println(new Solution078().subsets(new int[]{1, 2, 3}));
+    }
+
     //78. Subsets
     //Given a set of distinct integers, nums, return all possible subsets (the power set).
     //
@@ -40,9 +44,5 @@ public class Solution078 {
             backtrack(result, tmpList, i + 1, nums);
             tmpList.remove(tmpList.size() - 1);
         }
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new Solution078().subsets(new int[]{1, 2, 3}));
     }
 }

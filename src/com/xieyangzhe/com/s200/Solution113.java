@@ -74,8 +74,8 @@ public class Solution113 {
             if (root.left == null && root.right == null && root.val == sum) {
                 ret.add(path);
             }
-            dfs(root.left, sum-root.val, new ArrayList(path), ret);
-            dfs(root.right, sum-root.val, new ArrayList(path), ret);
+            dfs(root.left, sum - root.val, new ArrayList(path), ret);
+            dfs(root.right, sum - root.val, new ArrayList(path), ret);
         }
     }
 }

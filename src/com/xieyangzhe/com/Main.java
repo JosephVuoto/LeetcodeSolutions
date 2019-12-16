@@ -1,7 +1,6 @@
 package com.xieyangzhe.com;
 
 import com.xieyangzhe.com.common.ListNode;
-import com.xieyangzhe.com.s100.Solution060;
 import com.xieyangzhe.com.s100.Solution061;
 
 public class Main {

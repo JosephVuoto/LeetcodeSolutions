@@ -15,7 +15,7 @@ public class TreeNode {
             return null;
         }
         TreeNode[] nodeArray = new TreeNode[nodes.length];
-        for (int i = 0; i < nodes.length ; i++) {
+        for (int i = 0; i < nodes.length; i++) {
             if (!nodes[i].equals("#")) {
                 if (nodeArray[i] == null) {
                     nodeArray[i] = new TreeNode(Integer.parseInt(nodes[i]));

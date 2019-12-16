@@ -8,6 +8,10 @@ import java.util.List;
  * @date 16/12/19
  */
 public class Solution131 {
+    public static void main(String[] args) {
+        System.out.println(new Solution131().partition("aab"));
+    }
+
     //131. Palindrome Partitioning
     //Given a string s, partition s such that every substring of the partition is a palindrome.
     //
@@ -47,7 +51,7 @@ public class Solution131 {
             }
         }
     }
-    
+
     private boolean isPalindrome(String s) {
         int i = 0, j = s.length() - 1;
         while (i < j) {
@@ -58,9 +62,5 @@ public class Solution131 {
             j--;
         }
         return true;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new Solution131().partition("aab"));
     }
 }

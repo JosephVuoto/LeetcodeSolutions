@@ -41,6 +41,11 @@ public class Solution129 {
     //The root-to-leaf path 4->0 represents the number 40.
     //Therefore, sum = 495 + 491 + 40 = 1026.
 
+    public static void main(String[] args) {
+        TreeNode root = TreeNode.createTree("4", "9", "0", "5", "1", "#", "#");
+        System.out.println(new Solution129().sumNumbers(root));
+    }
+
     public int sumNumbers(TreeNode root) {
         if (root == null) {
             return 0;
@@ -48,7 +53,7 @@ public class Solution129 {
         List<List<Integer>> result = new ArrayList<>();
         getAns(root, result, new ArrayList<>());
         int sum = 0;
-        for (List<Integer> list: result) {
+        for (List<Integer> list : result) {
             int tmp = 0;
             for (int i = 0; i < list.size(); i++) {
                 tmp = tmp * 10 + list.get(i);
@@ -57,6 +62,8 @@ public class Solution129 {
         }
         return sum;
     }
+
+    //-----------------------------------------------------------------
 
     private void getAns(TreeNode node, List<List<Integer>> result, List<Integer> tmp) {
         if (node.left == null && node.right == null) {
@@ -75,8 +82,6 @@ public class Solution129 {
             tmp.remove(tmp.size() - 1);
         }
     }
-
-    //-----------------------------------------------------------------
 
     public int sumNumbers1(TreeNode root) {
         if (root == null) {
@@ -98,11 +103,5 @@ public class Solution129 {
             ans += getAns1(node.right, cur);
         }
         return ans;
-    }
-
-
-    public static void main(String[] args) {
-        TreeNode root = TreeNode.createTree("4", "9", "0", "5", "1", "#", "#");
-        System.out.println(new Solution129().sumNumbers(root));
     }
 }

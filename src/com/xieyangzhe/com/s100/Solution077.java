@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution077 {
+    public static void main(String[] args) {
+        new Solution077().combine(4, 2);
+    }
+
     //77. Combinations
     //Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.
     //
@@ -35,9 +39,5 @@ public class Solution077 {
             backtrack(result, tmpList, n, k, i + 1);
             tmpList.remove(tmpList.size() - 1);
         }
-    }
-
-    public static void main(String[] args) {
-        new Solution077().combine(4, 2);
     }
 }

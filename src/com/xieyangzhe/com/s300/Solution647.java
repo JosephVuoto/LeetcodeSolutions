@@ -5,6 +5,10 @@ package com.xieyangzhe.com.s300;
  * @date 13/12/19
  */
 public class Solution647 {
+    public static void main(String[] args) {
+        System.out.println(new Solution647().dp("aaa"));
+    }
+
     //647. Palindromic Substrings
     //Given a string, your task is to count how many palindromic substrings in this string.
     //
@@ -75,9 +79,5 @@ public class Solution647 {
             }
         }
         return cnt;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new Solution647().dp("aaa"));
     }
 }

@@ -1,7 +1,6 @@
 package com.xieyangzhe.com.s100;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class Solution073 {

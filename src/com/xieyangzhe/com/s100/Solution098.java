@@ -99,7 +99,7 @@ public class Solution098 {
                 root = root.left;
             }
             root = stack.pop();
-            if(pre != null && root.val <= pre.val) {
+            if (pre != null && root.val <= pre.val) {
                 return false;
             }
             pre = root;

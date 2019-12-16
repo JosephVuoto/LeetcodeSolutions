@@ -3,8 +3,6 @@ package com.xieyangzhe.com.s100;
 import com.xieyangzhe.com.common.TreeNode;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -55,8 +53,8 @@ public class Solution095 {
         for (int i = start; i <= end; i++) {
             List<TreeNode> resultLeft = getResult(start, i - 1);
             List<TreeNode> resultRight = getResult(i + 1, end);
-            for (TreeNode nodeLeft: resultLeft) {
-                for (TreeNode nodeRight: resultRight) {
+            for (TreeNode nodeLeft : resultLeft) {
+                for (TreeNode nodeRight : resultRight) {
                     TreeNode root = new TreeNode(i);
                     root.left = nodeLeft;
                     root.right = nodeRight;

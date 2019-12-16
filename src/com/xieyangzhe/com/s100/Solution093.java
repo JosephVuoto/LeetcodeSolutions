@@ -8,6 +8,10 @@ import java.util.List;
  * @date 12/12/19
  */
 public class Solution093 {
+    public static void main(String[] args) {
+        System.out.println(new Solution093().restoreIpAddresses("0279245587303"));
+    }
+
     //93. Restore IP Addresses
     //Given a string containing only digits, restore it by returning all possible valid IP address combinations.
     //
@@ -47,9 +51,5 @@ public class Solution093 {
             helper(result, s, new ArrayList<>(tmp), start + i);
             tmp.remove(tmp.size() - 1);
         }
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new Solution093().restoreIpAddresses("0279245587303"));
     }
 }

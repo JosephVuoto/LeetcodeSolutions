@@ -2,13 +2,17 @@ package com.xieyangzhe.com.s200;
 
 import com.xieyangzhe.com.common.ListNode;
 
-import java.util.List;
-
 /**
  * @author Yangzhe Xie
  * @date 16/12/19
  */
 public class Solution148 {
+    public static void main(String[] args) {
+        ListNode head1 = ListNode.fromList(1, 3, 5);
+        ListNode head2 = ListNode.fromList(2, 4, 6);
+        System.out.println(new Solution148().merge(head1, head2).toList());
+    }
+
     //148. Sort List
     //Sort a linked list in O(n log n) time using constant space complexity.
     //
@@ -60,16 +64,10 @@ public class Solution148 {
         }
         if (left != null) {
             node.next = left;
-        } 
+        }
         if (right != null) {
             node.next = right;
         }
         return head;
-    }
-
-    public static void main(String[] args) {
-        ListNode head1 = ListNode.fromList(1, 3, 5);
-        ListNode head2 = ListNode.fromList(2, 4, 6);
-        System.out.println(new Solution148().merge(head1, head2).toList());
     }
 }

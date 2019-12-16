@@ -34,8 +34,8 @@ public class Solution114 {
         getAns(root, null);
     }
 
-    private TreeNode getAns(TreeNode root, TreeNode last)    {
-        if(root == null) return last;
+    private TreeNode getAns(TreeNode root, TreeNode last) {
+        if (root == null) return last;
         root.right = getAns(root.left, getAns(root.right, last));
         root.left = null;
         return root;

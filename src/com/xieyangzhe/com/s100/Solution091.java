@@ -1,13 +1,14 @@
 package com.xieyangzhe.com.s100;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * @author Yangzhe Xie
  * @date 11/12/19
  */
 public class Solution091 {
+    public static void main(String[] args) {
+        System.out.println(new Solution091().numDecodings("226"));
+    }
+
     //91. Decode Ways
     //A message containing letters from A-Z is being encoded to numbers using the following mapping:
     //
@@ -43,9 +44,5 @@ public class Solution091 {
             }
         }
         return dp[0];
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new Solution091().numDecodings("226"));
     }
 }

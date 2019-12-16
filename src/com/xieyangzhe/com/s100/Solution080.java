@@ -1,6 +1,14 @@
 package com.xieyangzhe.com.s100;
 
 public class Solution080 {
+    public static void main(String[] args) {
+        int[] test = new int[]{0, 0, 1, 1, 1, 1, 2, 3, 3};
+        new Solution080().removeDuplicates(test);
+        for (int i : test) {
+            System.out.println(i);
+        }
+    }
+
     //80. Remove Duplicates from Sorted Array II
     //Given a sorted array nums, remove the duplicates in-place such that duplicates appeared at most twice and return the new length.
     //
@@ -63,14 +71,6 @@ public class Solution080 {
     private void remove(int[] nums, int index) {
         for (int i = index; i < nums.length - 1; i++) {
             nums[i] = nums[i + 1];
-        }
-    }
-
-    public static void main(String[] args) {
-        int[] test = new int[]{0, 0, 1, 1, 1, 1, 2, 3, 3};
-        new Solution080().removeDuplicates(test);
-        for (int i : test) {
-            System.out.println(i);
         }
     }
 }
