@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="139b1818-3f12-49dc-9cf6-81e374c16afa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s200/Solution145.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/xieyangzhe/com/s200/Solution150.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,20 +71,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Solution139">
-    <configuration name="Solution129" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xieyangzhe.com.s200.Solution129" />
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xieyangzhe.com.s200.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Solution150">
     <configuration name="Solution131" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xieyangzhe.com.s200.Solution131" />
       <module name="LeetCode" />
@@ -123,6 +111,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Solution150" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xieyangzhe.com.s200.Solution150" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xieyangzhe.com.s200.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Solution560" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xieyangzhe.com.s300.Solution560" />
       <module name="LeetCode" />
@@ -137,19 +138,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Solution129" />
       <item itemvalue="Application.Solution131" />
       <item itemvalue="Application.Solution148" />
       <item itemvalue="Application.Solution560" />
       <item itemvalue="Application.Solution139" />
+      <item itemvalue="Application.Solution150" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution150" />
         <item itemvalue="Application.Solution139" />
         <item itemvalue="Application.Solution560" />
         <item itemvalue="Application.Solution148" />
         <item itemvalue="Application.Solution131" />
-        <item itemvalue="Application.Solution129" />
       </list>
     </recent_temporary>
   </component>
