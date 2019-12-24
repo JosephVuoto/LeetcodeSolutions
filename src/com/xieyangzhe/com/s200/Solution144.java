@@ -1,5 +1,6 @@
 package com.xieyangzhe.com.s200;
 
+import com.xieyangzhe.com.common.ListNode;
 import com.xieyangzhe.com.common.TreeNode;
 
 import java.util.ArrayList;
@@ -30,15 +31,14 @@ public class Solution144 {
         List<Integer> result = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
         TreeNode node = root;
-        while (!stack.empty() || node != null) {
+        while (node != null || !stack.empty()) {
             while (node != null) {
                 result.add(node.val);
                 stack.push(node);
                 node = node.left;
             }
             if (!stack.empty()) {
-                node = stack.pop();
-                node = node.right;
+                node = stack.pop().right;
             }
         }
         return result;
