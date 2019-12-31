@@ -39,7 +39,7 @@ public class Solution146 {
         private Map<Integer, DLinkNode> cache;
 
         public LRUCache(int capacity) {
-            cache = new HashMap<Integer, DLinkNode>();
+            cache = new HashMap<>();
             this.capacity = capacity;
         }
 
@@ -49,7 +49,9 @@ public class Solution146 {
                 int value = target.value;
                 target.update();
                 return value;
-            } else return -1;
+            } else {
+                return -1;
+            }
         }
 
         public void put(int key, int value) {
@@ -58,7 +60,9 @@ public class Solution146 {
                 target.value = value;
                 target.update();
             } else {
-                if (capacity == 0) return;
+                if (capacity == 0) {
+                    return;
+                }
                 if (cache.size() == capacity) {
                     cache.remove(head.key);
                     head.removeFromHead();
@@ -94,8 +98,7 @@ public class Solution146 {
 
             private void update() {
                 // no need to update if accessing the most revently used value.
-                if (tail == this) return;
-                else {
+                if (tail != this) {
                     // remove from current postion and update nodes (if any) on both sides.
                     if (this != head) {
                         this.left.right = this.right;
@@ -113,7 +116,7 @@ public class Solution146 {
                 if (tail == null) {
                     head = this;
                     tail = this;
-                    // appned as tail and update tail reference.
+                    // append as tail and update tail reference.
                 } else {
                     this.right = null;
                     this.left = tail;
