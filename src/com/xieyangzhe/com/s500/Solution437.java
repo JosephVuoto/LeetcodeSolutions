@@ -1,4 +1,4 @@
-package com.xieyangzhe.com.s400;
+package com.xieyangzhe.com.s500;
 
 import com.xieyangzhe.com.common.TreeNode;
 
