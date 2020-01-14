@@ -1,4 +1,4 @@
-package com.xieyangzhe.com.s500;
+package com.xieyangzhe.com.s600;
 
 import java.util.HashMap;
 import java.util.Map;
