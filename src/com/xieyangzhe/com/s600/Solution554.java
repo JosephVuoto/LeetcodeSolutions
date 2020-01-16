@@ -55,29 +55,4 @@ public class Solution554 {
         }
         return res;
     }
-
-    //TLE
-    public int leastBricks1(List<List<Integer>> wall) {
-        int width = 0, result = wall.size();
-        for (int brick : wall.get(0)) {
-            width += brick;
-        }
-        for (int i = 1; i < width; i++) {
-            int cnt = 0;
-            for (List<Integer> level : wall) {
-                int tmp = 0;
-                for (int brick : level) {
-                    tmp += brick;
-                    if (tmp == i) {
-                        break;
-                    } else if (tmp > i) {
-                        cnt++;
-                        break;
-                    }
-                }
-            }
-            result = Math.min(result, cnt);
-        }
-        return result;
-    }
 }
