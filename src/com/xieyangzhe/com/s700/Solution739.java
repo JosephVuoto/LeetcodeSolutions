@@ -1,4 +1,4 @@
-package com.xieyangzhe.com.s600;
+package com.xieyangzhe.com.s700;
 
 import java.util.Arrays;
 import java.util.Stack;
