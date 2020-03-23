@@ -82,6 +82,24 @@ public class TreeNode {
         return result;
     }
 
+    public static List<List<Integer>> levelOrderWithLevelRecursive(TreeNode root) {
+        List<List<Integer>> result = new ArrayList<>();
+        levelOrderWithLevelRecursiveHelper(result, root, 0);
+        return result;
+    }
+
+    public static void levelOrderWithLevelRecursiveHelper(List<List<Integer>> result, TreeNode node, int level) {
+        if (node == null) {
+            return;
+        }
+        if (level == result.size()) {
+            result.add(new ArrayList<>());
+        }
+        result.get(level).add(node.val);
+        levelOrderWithLevelRecursiveHelper(result, node.left, level + 1);
+        levelOrderWithLevelRecursiveHelper(result, node.right, level + 1);
+    }
+
     public static List<Integer> preOrder(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
