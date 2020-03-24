@@ -20,6 +20,10 @@ public class ProducerConsumer {
 
     public static void main(String[] args) {
         new Thread(new Producer()).start();
+        new Thread(new Producer()).start();
+        new Thread(new Producer()).start();
+        new Thread(new Producer()).start();
+        new Thread(new Producer()).start();
         new Thread(new Consumer()).start();
         new Thread(new Consumer()).start();
         new Thread(new Consumer()).start();
