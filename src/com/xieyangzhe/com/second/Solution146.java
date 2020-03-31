@@ -6,7 +6,7 @@ import java.util.HashMap;
  * @author Yangzhe Xie
  * @date 28/3/20
  */
-public class Solutoin146 {
+public class Solution146 {
     //146. LRU Cache
     //Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put.
     //

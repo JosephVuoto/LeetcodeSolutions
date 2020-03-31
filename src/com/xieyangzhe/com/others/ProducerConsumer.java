@@ -1,5 +1,7 @@
 package com.xieyangzhe.com.others;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Condition;
@@ -11,82 +13,71 @@ import java.util.concurrent.locks.ReentrantLock;
  * @date 20/12/19
  */
 public class ProducerConsumer {
-
-    private static AtomicInteger count = new AtomicInteger(0);
-    private static final Integer MAX = 10;
     private static Lock lock = new ReentrantLock();
-    private static final Condition full = lock.newCondition();
-    private static final Condition empty = lock.newCondition();
+    private static Condition notFull = lock.newCondition();
+    private static Condition notEmpty = lock.newCondition();
+
+    private static final int MAX_CAPACITY = 10;
+    private static AtomicInteger nextId = new AtomicInteger(1);
+    private static Queue<Integer> queue = new LinkedList<>();
 
     public static void main(String[] args) {
-        new Thread(new Producer()).start();
-        new Thread(new Producer()).start();
-        new Thread(new Producer()).start();
-        new Thread(new Producer()).start();
-        new Thread(new Producer()).start();
-        new Thread(new Consumer()).start();
-        new Thread(new Consumer()).start();
-        new Thread(new Consumer()).start();
-        new Thread(new Consumer()).start();
-        new Thread(new Consumer()).start();
-        new Thread(new Consumer()).start();
-        new Thread(new Consumer()).start();
-        new Thread(new Consumer()).start();
+        for (int i = 1; i < 6; i++) {
+            new Thread(new Producer(), "producer" + i).start();
+        }
+        for (int i = 1; i < 6; i++) {
+            new Thread(new Consumer(), "consumer" + i).start();
+        }
     }
 
-    public static class Producer implements Runnable {
+    private static class Producer implements Runnable {
         @Override
         public void run() {
-            for (int i = 0; i < 10; i++) {
-                try {
-                    Thread.sleep(3000);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+            while (true) {
                 lock.lock();
                 try {
-                    while (count.get() == MAX) {
-                        try {
-                            full.await();
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
+                    while (queue.size() == MAX_CAPACITY) {
+                        notFull.await();
                     }
-                    count.incrementAndGet();
-                    System.out.println(Thread.currentThread().getName()
-                            + " produce - " + count);
-                    empty.signalAll();
+                    int k = nextId.getAndIncrement();
+                    System.out.println(Thread.currentThread().getName() + " - " + k);
+                    queue.add(k);
+                    notEmpty.signal();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 } finally {
                     lock.unlock();
+                }
+                try {
+                    Thread.sleep(3000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
             }
         }
     }
 
-    public static class Consumer implements Runnable {
+    private static class Consumer implements Runnable {
         @Override
         public void run() {
-            for (int i = 0; i < 10; i++) {
-                try {
-                    Thread.sleep(3000);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+            while (true) {
                 lock.lock();
                 try {
-                    while (count.get() == 0) {
-                        try {
-                            empty.await();
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
+                    while (queue.isEmpty()) {
+                        notEmpty.await();
                     }
-                    count.decrementAndGet();
-                    System.out.println(Thread.currentThread().getName()
-                            + " consume - " + count);
-                    full.signalAll();
+                    int k = queue.poll();
+                    System.out.println(Thread.currentThread().getName() + " - " + k);
+                    notFull.signal();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 } finally {
                     lock.unlock();
+                }
+                try {
+                    Thread.sleep(3000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
             }
         }
