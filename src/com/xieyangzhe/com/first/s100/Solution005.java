@@ -1,5 +1,7 @@
 package com.xieyangzhe.com.first.s100;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Solution005 {
 
 //    5. Longest Palindromic Substring
