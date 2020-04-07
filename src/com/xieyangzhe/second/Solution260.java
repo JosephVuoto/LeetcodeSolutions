@@ -1,5 +1,7 @@
 package com.xieyangzhe.second;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  * @author Yangzhe Xie
  * @date 6/4/20
