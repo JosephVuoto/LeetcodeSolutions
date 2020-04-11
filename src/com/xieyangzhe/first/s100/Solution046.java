@@ -1,6 +1,8 @@
 package com.xieyangzhe.first.s100;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -9,7 +11,7 @@ import java.util.List;
  */
 public class Solution046 {
     public static void main(String[] args) {
-        System.out.println(new Solution046().permute(new int[]{1, 2, 3}));
+        new Solution046().permute();
     }
 
     //46. Permutations
@@ -43,6 +45,38 @@ public class Solution046 {
                 tmp.add(num);
                 dfs(nums, result, new ArrayList<>(tmp));
                 tmp.remove(tmp.size() - 1);
+            }
+        }
+    }
+
+    private void permute() {
+        long time = new Date().getTime();
+        List<String> result = new ArrayList<>();
+        dfs(9, result, "", new ArrayList<>(), Arrays.asList("1 2", "2 1"));
+//        System.out.println(result);
+        System.out.println(new Date().getTime() - time + "ms");
+    }
+
+    private void dfs(int n, List<String> result, String tmpString, List<Integer> tmpList, List<String> rules) {
+        if (tmpList.size() == n) {
+            result.add(tmpString);
+            return;
+        }
+        for (int i = 1; i <= n; i++) {
+            if (!tmpList.contains(i)) {
+                String newTmpString = tmpString.length() == 0 ? "" + i : tmpString + " " + i;
+                boolean isValid = true;
+                for (String rule: rules) {
+                    if (newTmpString.contains(rule)) {
+                        isValid = false;
+                        break;
+                    }
+                }
+                if (isValid) {
+                    tmpList.add(i);
+                    dfs(n, result, newTmpString, new ArrayList<>(tmpList), rules);
+                    tmpList.remove(tmpList.size() - 1);
+                }
             }
         }
     }
