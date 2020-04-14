@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class LIS {
     public static void main(String[] args) {
-        System.out.println(new LIS().lis(new int[]{1, 3, 2, 6, 7, 9, 4, 10, 5, 6}));
+
     }
 
     //Longest Increasing Subsequence
