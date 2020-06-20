@@ -1,6 +1,7 @@
 package com.xieyangzhe.second;
 
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -28,18 +29,22 @@ public class Solution003 {
 //    Explanation: The answer is "wke", with the length of 3.
 //    Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
     public int lengthOfLongestSubstring(String s) {
-        int i = 0, j = 0, result = 0;
+        int left = 0, right = 0, result = 0;
         Set<Character> set = new HashSet<>();
-        while (j < s.length() && i < s.length()) {
-            if (!set.contains(s.charAt(j))) {
-                set.add(s.charAt(j));
-                j++;
-                result = Math.max(j - i, result);
+        while (left < s.length() && right < s.length()) {
+            if (!set.contains(s.charAt(right))) {
+                set.add(s.charAt(right));
+                right++;
+                result = Math.max(result, right - left);
             } else {
-                set.remove(s.charAt(i));
-                i++;
+                set.remove(s.charAt(left));
+                left++;
             }
         }
         return result;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new Solution003().lengthOfLongestSubstring("abcabcbb"));
     }
 }
