@@ -1,6 +1,7 @@
 package com.xieyangzhe.second;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author Yangzhe Xie
@@ -39,31 +40,30 @@ public class Solution146 {
      * obj.put(key,value);
      */
     public static void main(String[] args) {
-        LRUCache cache = new LRUCache(2 /* capacity */);
-
-        cache.put(1, 1);
-        cache.put(2, 2);
-        System.out.println(cache.get(1));       // returns 1
-        cache.put(3, 3);    // evicts key 2
-        System.out.println(cache.get(2));       // returns -1 (not found)
-        cache.put(4, 4);    // evicts key 1
-        System.out.println(cache.get(1));       // returns -1 (not found)
-        System.out.println(cache.get(3));       // returns 3
-        System.out.println(cache.get(4));       // returns 4
+//        LRUCache cache = new LRUCache(2 /* capacity */);
+//
+//        cache.put(1, 1);
+//        cache.put(2, 2);
+//        System.out.println(cache.get(1));       // returns 1
+//        cache.put(3, 3);    // evicts key 2
+//        System.out.println(cache.get(2));       // returns -1 (not found)
+//        cache.put(4, 4);    // evicts key 1
+//        System.out.println(cache.get(1));       // returns -1 (not found)
+//        System.out.println(cache.get(3));       // returns 3
+//        System.out.println(cache.get(4));       // returns 4
     }
 
-    public static class LRUCache {
+    private static class LRUCache {
+        private int capacity;
+        private Map<Integer, LRUNode> map;
         private LRUNode head;
         private LRUNode tail;
 
-        private HashMap<Integer, LRUNode> map;
-        private int capacity;
-
         public LRUCache(int capacity) {
             this.capacity = capacity;
+            map = new HashMap<>();
             head = new LRUNode(null, null);
             tail = new LRUNode(null, null);
-            map = new HashMap<>();
             head.next = tail;
             tail.prev = head;
         }
@@ -76,7 +76,7 @@ public class Solution146 {
             node.prev.next = node.next;
             node.next.prev = node.prev;
             appendTail(node);
-            return node.value;
+            return node.getValue();
         }
 
         public void put(int key, int value) {
@@ -106,49 +106,50 @@ public class Solution146 {
             tail.prev.next = node;
             tail.prev = node;
         }
+
+        private static class LRUNode {
+            private Integer key;
+            private Integer value;
+            private LRUNode prev;
+            private LRUNode next;
+
+            public LRUNode(Integer key, Integer value) {
+                this.key = key;
+                this.value = value;
+            }
+
+            public Integer getKey() {
+                return key;
+            }
+
+            public void setKey(Integer key) {
+                this.key = key;
+            }
+
+            public Integer getValue() {
+                return value;
+            }
+
+            public void setValue(Integer value) {
+                this.value = value;
+            }
+
+            public LRUNode getPrev() {
+                return prev;
+            }
+
+            public void setPrev(LRUNode prev) {
+                this.prev = prev;
+            }
+
+            public LRUNode getNext() {
+                return next;
+            }
+
+            public void setNext(LRUNode next) {
+                this.next = next;
+            }
+        }
     }
 
-    private static class LRUNode {
-        private Integer key;
-        private Integer value;
-        private LRUNode prev;
-        private LRUNode next;
-
-        public LRUNode(Integer key, Integer value) {
-            this.key = key;
-            this.value = value;
-        }
-
-        public Integer getKey() {
-            return key;
-        }
-
-        public void setKey(Integer key) {
-            this.key = key;
-        }
-
-        public Integer getValue() {
-            return value;
-        }
-
-        public void setValue(Integer value) {
-            this.value = value;
-        }
-
-        public LRUNode getPrev() {
-            return prev;
-        }
-
-        public void setPrev(LRUNode prev) {
-            this.prev = prev;
-        }
-
-        public LRUNode getNext() {
-            return next;
-        }
-
-        public void setNext(LRUNode next) {
-            this.next = next;
-        }
-    }
 }

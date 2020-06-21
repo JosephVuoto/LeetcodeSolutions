@@ -1,5 +1,6 @@
 package com.xieyangzhe.second;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -30,17 +31,17 @@ public class Solution139 {
     //Input: s = "catsandog", wordDict = ["cats", "dog", "sand", "and", "cat"]
     //Output: false
     public boolean wordBreak(String s, List<String> wordDict) {
-        if (s == null || s.length() == 0) {
-            return false;
-        }
-        boolean[] dp = new boolean[s.length()];
+        boolean[] dp = new boolean[s.length() + 1];
+        dp[0] = true;
         for (int i = 0; i < s.length(); i++) {
             for (int j = i + 1; j <= s.length(); j++) {
-                if (wordDict.contains(s.substring(i, j)) && (i == 0 || dp[i - 1])) {
-                    dp[j - 1] = true;
-                }
+                dp[j] = dp[j] || (dp[i] && wordDict.contains(s.substring(i, j)));
             }
         }
-        return dp[s.length() - 1];
+        return dp[s.length()];
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new Solution139().wordBreak("applepenapple", Arrays.asList("apple", "pens")));
     }
 }
