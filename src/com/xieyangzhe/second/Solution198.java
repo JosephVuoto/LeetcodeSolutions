@@ -26,19 +26,18 @@ public class Solution198 {
     //Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1).
     //             Total amount you can rob = 2 + 9 + 1 = 12.
     public int rob(int[] nums) {
-        if (nums.length == 0) {
+        if (nums == null || nums.length == 0) {
             return 0;
         }
         if (nums.length == 1) {
             return nums[0];
         }
-        int tmpA = 0, tmpB = nums[0];
-
+        int maxRob = nums[0], maxNot = 0;
         for (int i = 1; i < nums.length; i++) {
-            int tmp = tmpB;
-            tmpB = Math.max(tmpA + nums[i], tmpB);
-            tmpA = tmp;
+            int tmp = maxNot;
+            maxNot = Math.max(maxRob, tmp);
+            maxRob = tmp + nums[i];
         }
-        return tmpB;
+        return Math.max(maxNot, maxRob);
     }
 }
