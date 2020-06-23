@@ -23,13 +23,14 @@ public class Solution121 {
     //Output: 0
     //Explanation: In this case, no transaction is done, i.e. max profit = 0.
     public int maxProfit(int[] prices) {
-        int lowest = Integer.MAX_VALUE, result = 0;
-        for (int price : prices) {
-            if (lowest > price) {
-                lowest = price;
-            }
-            result = Math.max(result, price - lowest);
+        if (prices == null || prices.length == 0) {
+            return 0;
         }
-        return result;
+        int buy = -prices[0], sell = 0;
+        for (int i = 1; i < prices.length; i++) {
+            sell = Math.max(sell, prices[i] + buy);
+            buy = Math.max(buy, -prices[i]);
+        }
+        return sell;
     }
 }
