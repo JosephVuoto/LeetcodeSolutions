@@ -20,18 +20,13 @@ public class Solution055 {
     //Explanation: You will always arrive at index 3 no matter what. Its maximum
     //             jump length is 0, which makes it impossible to reach the last index.
     public boolean canJump(int[] nums) {
-        if (nums.length <= 1) {
-            return true;
-        }
-        int max = nums[0];
-        for (int i = 1; i <= max; i++) {
-            if (i + nums[i] > max) {
-                max = i + nums[i];
+        int maxLength = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (maxLength < i) {
+                break;
             }
-            if (max >= nums.length - 1) {
-                return true;
-            }
+            maxLength = Math.max(maxLength, nums[i] + i);
         }
-        return false;
+        return maxLength >= nums.length - 1;
     }
 }
