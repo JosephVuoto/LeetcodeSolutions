@@ -18,32 +18,43 @@ public class Solution031 {
     //3,2,1 → 1,2,3
     //1,1,5 → 1,5,1
     public void nextPermutation(int[] nums) {
-        int i = nums.length - 2;
-        while (i >= 0 && nums[i + 1] <= nums[i]) {
-            i--;
-        }
-        if (i >= 0) {
-            int j = nums.length - 1;
-            while (j >= 0 && nums[j] <= nums[i]) {
-                j--;
+        int i, j;
+        for (i = nums.length - 2; i >= 0; i--) {
+            if (nums[i] < nums[i + 1]) {
+                break;
             }
-            swap(nums, i, j);
         }
-        reverse(nums, i + 1);
-    }
-
-    private void reverse(int[] nums, int start) {
-        int i = start, j = nums.length - 1;
-        while (i < j) {
-            swap(nums, i, j);
-            i++;
-            j--;
+        if (i == -1) {
+            reverse(nums, 0, nums.length - 1);
+            return;
         }
+        for (j = nums.length - 1; j >= i; j--) {
+            if (nums[j] > nums[i]) {
+                break;
+            }
+        }
+        swap(nums, i, j);
+        reverse(nums, i + 1, nums.length - 1);
     }
-
+    
     private void swap(int[] nums, int i, int j) {
-        int temp = nums[i];
+        int tmp = nums[i];
         nums[i] = nums[j];
-        nums[j] = temp;
+        nums[j] = tmp;
+    }
+    
+    private void reverse(int[] nums, int from, int to) {
+        while (from < to) {
+            swap(nums, from++, to--);
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] test = new int[]{1,2,5,4,3};
+        new Solution031().nextPermutation(test);
+        for (int num : test) {
+            System.out.println(num);
+        }
+//        System.out.println();
     }
 }
