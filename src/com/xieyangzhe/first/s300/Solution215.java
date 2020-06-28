@@ -20,38 +20,33 @@ public class Solution215 {
     //Output: 4
     //Note:
     //You may assume k is always valid, 1 ≤ k ≤ array's length.
-    public int findKthLargest(int[] nums, int k) {
-        PriorityQueue<Integer> queue = new PriorityQueue<>();
-        for (int num : nums) {
-            queue.add(num);
-            if (queue.size() > k) {
-                queue.poll();
-            }
-        }
-        return queue.poll();
-    }
-
-    int findKthLargest1(int[] nums, int k) {
+    int findKthLargest(int[] nums, int k) {
         return quickSelect(nums, 0, nums.length - 1, nums.length - k);
     }
 
-    private int quickSelect(int[] nums, int lo, int hi, int k /* index we're looking for */) {
-        int i = lo, j = hi, pivot = nums[hi];
-        while (i < j) {
-            if (nums[i++] > pivot) swap(nums, --i, --j);
+    private static int quickSelect(int[] nums, int start, int end, int target) {
+        if (start > end) {
+            return -1;
         }
-        swap(nums, i, hi);
-        if (i == k)
+        int tmp = nums[start];
+        int i = start, j = end;
+        while (i < j) {
+            while (j > i && nums[j] >= tmp) {
+                j--;
+            }
+            nums[i] = nums[j];
+            while (i < j && nums[i] < tmp) {
+                i++;
+            }
+            nums[j] = nums[i];
+        }
+        nums[i] = tmp;
+        if (i == target) {
             return nums[i];
-        else if (i > k)
-            return quickSelect(nums, lo, i - 1, k);
-        else
-            return quickSelect(nums, i + 1, hi, k);
-    }
-
-    void swap(int[] nums, int i, int j) {
-        int temp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = temp;
+        } else if (i < target) {
+            return quickSelect(nums, i + 1, end, target);
+        } else {
+            return quickSelect(nums, start, i - 1, target);
+        }
     }
 }
