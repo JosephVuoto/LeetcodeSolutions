@@ -133,7 +133,29 @@ public class TreeNode {
         return result;
     }
 
-    public static List<Integer> postOrder(TreeNode root) {
+    private static List<Integer> postOrder(TreeNode root) {
+        TreeNode node = root, last = null;
+        List<Integer> result = new ArrayList<>();
+        Deque<TreeNode> stack = new ArrayDeque<>();
+        while (node != null || !stack.isEmpty()) {
+            while (node != null) {
+                stack.push(node);
+                node = node.left;
+            }
+            node = stack.peek();
+            if (node.right == null || node.right == last) {
+                result.add(node.val);
+                stack.pop();
+                last = node;
+                node = null;
+            } else {
+                node = node.right;
+            }
+        }
+        return result;
+    }
+
+    public static List<Integer> postOrder1(TreeNode root) {
         List<Integer> result = new LinkedList<>();
         Stack<TreeNode> stack = new Stack<>();
         TreeNode node;

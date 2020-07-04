@@ -30,4 +30,9 @@ public class ListNode {
         }
         return list;
     }
+
+    @Override
+    public String toString() {
+        return toList().toString();
+    }
 }
