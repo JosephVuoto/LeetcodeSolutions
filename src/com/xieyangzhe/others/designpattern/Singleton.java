@@ -1,8 +1,8 @@
-package com.xieyangzhe.others;
+package com.xieyangzhe.others.designpattern;
 
 /**
  * @author Yangzhe Xie
- * @date 21/6/20
+ * @date 5/7/20
  */
 public class Singleton {
     private static volatile Singleton instance;
@@ -19,18 +19,5 @@ public class Singleton {
             }
         }
         return instance;
-    }
-
-    private static class SingletonNew {
-        private SingletonNew() {
-        }
-
-        public static SingletonNew getInstance() {
-            return InstanceHolder.INSTANCE;
-        }
-
-        private static class InstanceHolder {
-            public static SingletonNew INSTANCE = new SingletonNew();
-        }
     }
 }

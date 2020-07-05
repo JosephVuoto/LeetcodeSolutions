@@ -39,25 +39,4 @@ public class Solution226 {
         root.right = left;
         return root;
     }
-
-    public TreeNode invertTree1(TreeNode root) {
-        if (root == null) {
-            return null;
-        }
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
-        while (!queue.isEmpty()) {
-            TreeNode node = queue.poll();
-            TreeNode left = node.left;
-            node.left = node.right;
-            node.right = left;
-            if (node.left != null) {
-                queue.add(node.left);
-            }
-            if (node.right != null) {
-                queue.add(node.right);
-            }
-        }
-        return root;
-    }
 }
