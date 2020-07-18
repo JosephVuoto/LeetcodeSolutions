@@ -31,11 +31,11 @@ public class Solution003 {
         int left = 0, right = 0, result = 0;
         Set<Character> set = new HashSet<>();
         while (left < s.length() && right < s.length()) {
-            if (set.contains(s.charAt(right))) {
-                set.remove(s.charAt(left++));
-            } else {
+            if (!set.contains(s.charAt(right))) {
                 set.add(s.charAt(right++));
-                result = Math.max(result, right - left);
+                result = Math.max(right - left, result);
+            } else {
+                set.remove(s.charAt(left++));
             }
         }
         return result;
