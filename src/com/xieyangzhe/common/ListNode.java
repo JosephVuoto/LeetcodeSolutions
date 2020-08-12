@@ -97,4 +97,20 @@ public class ListNode {
     public String toString() {
         return toList().toString();
     }
+
+    public static ListNode reverseK(ListNode node, int k) {
+        ListNode target = node;
+        while (k-- > 0) {
+            target = target.next;
+        }
+        ListNode pre = null, cur = node;
+        while (cur != target) {
+            ListNode nxt = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = nxt;
+        }
+        node.next = cur;
+        return pre;
+    }
 }

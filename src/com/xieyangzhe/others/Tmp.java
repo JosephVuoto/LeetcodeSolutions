@@ -11,27 +11,26 @@ import java.util.*;
  */
 public class Tmp {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        sc.nextLine();
-        List<String> list = new ArrayList<>(n);
-        while (n-- > 0) {
-            list.add(sc.nextLine());
+        class G<T> { }
+        G<Integer> g1 = new G<Integer>();
+        G<String> g2 = new G<String>();
+        System.out.println(g1.getClass() == g2.getClass());
+    }
+    private static void sol(int n, int k) {
+        if (n % k != 0 || n / k < 6) {
+            System.out.println("-1");
+            return;
         }
-        for (String s : list) {
-            for (int i = 0; i < s.length(); i += 8) {
-                if (i + 8 < s.length()) {
-                    System.out.println(s.substring(i, i + 8));
-                } else {
-                    int curLength = i + 8 - s.length();
-                    StringBuilder sb = new StringBuilder(s.substring(i));
-                    for (int j = 0; j < curLength; j++) {
-                        sb.append(0);
-                    }
-                    System.out.println(sb.toString());
-                }
-            }
+        int target = n / k - 1;
+        int a = 1, b, c;
+        if (target % 2 == 0) {
+            b = target / 2 - 1;
+            c = target / 2 + 1;
+        } else {
+            b = target / 2;
+            c = target / 2 + 1;
         }
+        System.out.println(a * k + " " + b * k + " " + c * k);
     }
 
     private static void doTask(List<String> strList) {
