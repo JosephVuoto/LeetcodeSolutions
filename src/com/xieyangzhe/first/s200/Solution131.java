@@ -26,27 +26,21 @@ public class Solution131 {
     //  ["a","a","b"]
     //]
     public List<List<String>> partition(String s) {
-        boolean[][] dp = new boolean[s.length()][s.length()];
-        int length = s.length();
-        for (int len = 1; len <= length; len++) {
-            for (int i = 0; i <= s.length() - len; i++) {
-                dp[i][i + len - 1] = s.charAt(i) == s.charAt(i + len - 1) && (len < 3 || dp[i + 1][i + len - 2]);
-            }
-        }
         List<List<String>> result = new ArrayList<>();
-        helper(s, result, new ArrayList<>(), 0, dp);
+        helper(s, result, new ArrayList<>(), 0);
         return result;
     }
 
-    private void helper(String s, List<List<String>> result, List<String> tmp, int start, boolean[][] dp) {
+    private void helper(String s, List<List<String>> result, List<String> tmp, int start) {
         if (start >= s.length()) {
-            result.add(tmp);
+//            result.add(tmp);
+            result.add(new ArrayList<>(tmp));
             return;
         }
         for (int i = start; i < s.length(); i++) {
-            if (dp[start][i]) {
+            if (isPalindrome(s.substring(start, i + 1))) {
                 tmp.add(s.substring(start, i + 1));
-                helper(s, result, new ArrayList<>(tmp), i + 1, dp);
+                helper(s, result, tmp, i + 1);
                 tmp.remove(tmp.size() - 1);
             }
         }

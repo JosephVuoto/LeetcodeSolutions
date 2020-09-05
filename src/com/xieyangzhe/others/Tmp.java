@@ -10,11 +10,29 @@ import java.util.*;
  * @date 25/6/20
  */
 public class Tmp {
+    public static int demo(int[] nums) {
+        Arrays.sort(nums);
+        int[] take = new int[nums.length];
+        int[] leave = new int[nums.length];
+        take[0] = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] == nums[i - 1]) {
+                take[i] = take[i - 1] + nums[i];
+                leave[i] = leave[i - 1];
+            } else if (nums[i] == nums[i - 1] + 1) {
+                take[i] = leave[i - 1] + nums[i];
+                leave[i] = Math.max(leave[i - 1], take[i - 1]);
+            } else {
+                int prvMax = Math.max(leave[i - 1], take[i - 1]);
+                take[i] = prvMax + nums[i];
+                leave[i] = prvMax;
+            }
+        }
+        return Math.max(take[nums.length - 1], leave[nums.length - 1]);
+    }
+    
     public static void main(String[] args) {
-        class G<T> { }
-        G<Integer> g1 = new G<Integer>();
-        G<String> g2 = new G<String>();
-        System.out.println(g1.getClass() == g2.getClass());
+        System.out.println(demo(new int[]{2,2,2,3,4,5}));
     }
     private static void sol(int n, int k) {
         if (n % k != 0 || n / k < 6) {
