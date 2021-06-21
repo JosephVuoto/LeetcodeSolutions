@@ -9,6 +9,7 @@ public class ListNode {
 
     public ListNode(int x) {
         val = x;
+        ListNode next;
     }
 
     public static ListNode fromList(int... nums) {
